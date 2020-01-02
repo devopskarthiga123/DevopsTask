@@ -1,0 +1,11 @@
+# playbook.yml
+---
+- hosts: localhost
+  sudo: yes
+
+  tasks:
+  - name: Copy file
+    copy: src=../list_instances.py dest=/opt/list_instances.py owner=**** group=**** mode=755
+
+  - name: Execute script
+    command: python /opt/list_instances.py

@@ -1,0 +1,5 @@
+[local]
+local_machine ansible_connection=local ansible_host=localhost
+
+[webservers]
+#hub ansible_host=****
